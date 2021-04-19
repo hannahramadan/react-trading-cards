@@ -22,7 +22,10 @@ def get_cards_json():
     cards_list = []
 
     for c in cards:
-        cards_list.append({"skill": c.skill, "name": c.name, "imgUrl": c.image_url, "cardId": c.card_id})
+        cards_list.append({"skill": c.skill, 
+                            "name": c.name, 
+                            "imgUrl": c.image_url, 
+                            "cardId": c.card_id})
 
     return {"cards": cards_list}
 
